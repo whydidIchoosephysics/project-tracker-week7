@@ -8,8 +8,10 @@ function getCurrentDate() {
   let dateNow = moment().format("dddd, MMMM Do: H:mm:ss");
 
   currentDate.text(dateNow);
-  setInterval(getCurrentDate, 1000);
+  // setInterval(getCurrentDate, 1000);
 }
+
+getCurrentDate();
 
 // Add hour to the cards
 let t = {
@@ -24,17 +26,16 @@ let endTime = moment(t.finishTime, "HH:mm");
 
 let allTimes = [];
 
-//Loop over the times - only pushes time with 60 minutes interval
-while (startTime < endTime) {
-  //Push times
-  allTimes.push(startTime.format("HH:mm"));
-  //Add interval of 60 minutes
-  startTime.add(t.slotInterval, "minutes");
+// //Loop over the times - only pushes time with 60 minutes interval
+// while (startTime < endTime) {
+//   //Push times
+//   allTimes.push(startTime.format("HH:mm"));
+//   //Add interval of 60 minutes
+//   startTime.add(t.slotInterval, "minutes");
+// }
+// console.log(allTimes);
 
-  console.log(allTimes);
-}
-
-$(hourlySlots).each(function () {
-  let lastElement = allTimes.slice(-1);
-  $(this).text(lastElement);
-});
+// $(hourlySlots).each(function () {
+//   let lastElement = allTimes.slice(-1);
+//   $(this).text(lastElement);
+// });
