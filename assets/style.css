@@ -21,3 +21,7 @@
 .card {
   /* width: 100%; */
 }
+
+.passed-time {
+  background-color: gray;
+}
