@@ -13,8 +13,11 @@
 
 .save-button {
 }
-
 .card-body {
   display: flex;
   justify-content: space-between;
+}
+
+.card {
+  /* width: 100%; */
 }
