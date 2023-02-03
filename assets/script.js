@@ -47,16 +47,16 @@ console.log(allTimes);
 //   $(this).text(lastElement);
 // });
 
-let Times = [
-  "09:00",
-  "10:00",
-  "11:00",
-  "12:00",
-  "13:00",
-  "14:00",
-  "15:00",
-  "16:00",
-];
+// let Times = [
+//   "09:00",
+//   "10:00",
+//   "11:00",
+//   "12:00",
+//   "13:00",
+//   "14:00",
+//   "15:00",
+//   "16:00",
+// ];
 
 for (hour in allTimes) {
   let lastElement = allTimes[hour];
